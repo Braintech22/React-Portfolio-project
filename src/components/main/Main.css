@@ -1,0 +1,15 @@
+.section1{
+   border-bottom: 30px solid black;
+   background-image: url("C:\Users\pjimmy\Desktop\DEV-FILE\newproject\src\components\backg.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+
+ 
+  
+}
+.section3{
+    background-color: aquamarine;
+}
+.picture-col {
+    background-color: #1e79d4;
+  }
