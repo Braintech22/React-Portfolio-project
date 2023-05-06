@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import './header.css'
 
 
 
@@ -13,9 +14,9 @@ export const Header = () => {
   return (
     <>
     
-    <Navbar bg="black" fixed="top" variant="dark" expand="sm" expanded={expanded}>
+    <Navbar className='navbar' fixed="top" variant="dark" expand="sm" expanded={expanded}>
       <Container>
-        <Navbar.Brand href="#home">Prince Jimmy</Navbar.Brand>
+        <Navbar.Brand href="#home">Prince Jimmy </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={handleToggle} />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto">

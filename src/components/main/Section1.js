@@ -3,7 +3,7 @@ import './Main.css'
 
 
 import { Container, Row, Col, Image,Button } from 'react-bootstrap';
-import myImage from '../goo3.png';
+import myImage from '../goo6.png';
 import SocialMediaIcon from '../SocialMediaIcon';
 
 export default function Section1() {
@@ -13,7 +13,7 @@ export default function Section1() {
       <Row className="align-items-center">
       
         <Col md={6} >
-        <Image src={myImage} fluid style={{ width: '100%', height: '100%' }} />
+        <Image src={myImage} fluid style={{ width: '80%', height: '80%' }} />
 
         </Col>
         <Col md={6}>
