@@ -19,7 +19,7 @@ export const Main = () => {
         <Section1/>
         <Title text="Skills" />
         <CardGrid/>
-        <Title text="Experience" />
+        <Title text="My Projects" />
         
         
         {/* <Section3/> */}
