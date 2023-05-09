@@ -3,6 +3,7 @@ import Section1 from './Section1'
 
 import Title from '../Title'
 import CardGrid from '../CardGrid'
+import Credential from '../Credential'
 
 
 
@@ -19,7 +20,8 @@ export const Main = () => {
         <Section1/>
         <Title text="Skills" />
         <CardGrid/>
-        <Title text="My Projects" />
+        <Title text="Credentials" />
+        <Credential />
         
         
         {/* <Section3/> */}
