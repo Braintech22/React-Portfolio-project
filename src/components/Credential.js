@@ -8,69 +8,65 @@ import pic5 from "./cre.jpg"
 
 function Credential() {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', padding: '10px' }}>
-    <Carousel className='py-2' style={{ width: '400px', height: '300px'  }}>
+    <div style={{ display: 'flex', justifyContent: 'center', padding: '10px', paddingBottom: '100px' }}>
+    <Carousel className='px-1, py-1' style={{ width: '400px', height: '300px'  }}>
+      
       <Carousel.Item>
+      <h3>Agile Product Manager</h3>
+          <p>UTIVA Product School</p>
         <img
           className="d-block w-100"
           src={pic1}
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3>Agile Product Manager</h3>
-          <p>UTIVA Product School</p>
-        </Carousel.Caption>
+       
       </Carousel.Item>
 
       <Carousel.Item>
+      <h3>Scrum Fundamental Certificate</h3>
+          <p>Scrum Study</p>
         <img
           className="d-block w-100"
           src={pic5}
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3>Scrum Fundamental Certificate</h3>
-          <p>Scrum Study</p>
-        </Carousel.Caption>
+        
       </Carousel.Item>
 
       <Carousel.Item>
+      <h3>Digital Transformation</h3>
+          <p>General Electric</p>
         <img
           className="d-block w-100"
           src={pic4}
           alt="First slide"
         />
-        <Carousel.Caption>
-        <h3>Digital Transformation</h3>
-          <p>General Electric</p>
-        </Carousel.Caption>
+        
       </Carousel.Item>
 
       <Carousel.Item>
+      <h3>PMI Membership</h3>
+          <p>Project management Institute, U.S.A</p>
         <img
           className="d-block w-100"
           src={pic2}
           alt="Second slide"
         />
 
-        <Carousel.Caption>
-          <h3>PMI Membership</h3>
-          <p>Project management Institute, U.S.A</p>
-        </Carousel.Caption>
+        
       </Carousel.Item>
       <Carousel.Item>
+      <h3>Python Developer</h3>
+          <p>
+            FreecodeCamp
+          </p>
         <img
           className="d-block w-100"
           src={pic3}
           alt="Third slide"
         />
 
-        <Carousel.Caption>
-          <h3>Python Developer</h3>
-          <p>
-            FreecodeCamp
-          </p>
-        </Carousel.Caption>
+        
       </Carousel.Item>
     </Carousel>
 
