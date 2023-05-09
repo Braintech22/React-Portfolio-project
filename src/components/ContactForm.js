@@ -1,31 +1,51 @@
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-function ContactForm() {
+ const ContactForm = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_fibp68c', 'template_soy7z35', form.current, 'Y6ebN4LW5FokG-aVP')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
-    <Form className='container-fluid  ' style={{paddingBottom: '100px', width: '50%'}  }>
-      <Form.Group className=" mb-3" controlId="formBasicEmail">
-        <Form.Label style={{fontSize: '20px', fontWeight: 'bold'}}>Name</Form.Label>
-        <Form.Control type="email" placeholder="Enter your name" />
-        <Form.Text className="text-muted">
-          
-        </Form.Text>
-      </Form.Group>
+    <form
+    ref={form}
+    onSubmit={sendEmail}
+    style={{
+      paddingBottom: '100px',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+  
+      
+    }}
+  >
+    <div style={{ marginBottom: '10px', width: '50px'  }}>
+      <label htmlFor="name">Name</label>
+      <input type="text" name="from_name" id="name" required />
+    </div>
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label style={{fontSize: '20px', fontWeight: 'bold'}}>Email</Form.Label>
-        <Form.Control type="password" placeholder="Enter your Email" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
+    <div style={{ marginBottom: '10px', width: '50px' }}>
+      <label htmlFor="email">Email</label>
+      <input type="email" name="from_email" id="email" required />
+    </div>
+
+    <div style={{ marginBottom: '10px', width: '50px' }}>
+      <label htmlFor="message">Message</label>
+      <textarea name="message" id="message" required></textarea>
+    </div>
+
+    <input style={{ marginBottom: '10px', width: '50px',  }} type="submit" value="Send" /> 
+  </form>
   );
-}
+};
 
 export default ContactForm;
