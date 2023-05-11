@@ -4,6 +4,7 @@ import Footer from './components/footer/Footer';
 
 
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Main } from './components/main/Main';

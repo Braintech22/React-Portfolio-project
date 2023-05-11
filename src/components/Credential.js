@@ -9,7 +9,7 @@ import pic5 from "./cre.jpg"
 function Credential() {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', padding: '10px', paddingBottom: '100px' }}>
-    <Carousel className='px-1, py-1' style={{ width: '400px', height: '300px'  }}>
+    <Carousel className='px-1, py-1'style={{ width: '400px', height: '300px'  }}>
       
       <Carousel.Item>
       <h3>Agile Product Manager</h3>

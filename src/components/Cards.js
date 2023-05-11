@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import { Button, Card, Col, Row } from 'react-bootstrap';
 import "./Cards.css";
 
+
 const Cards = ({ cardData }) => {
   return (
-    <Row xs={1} sm={2} md={3} lg={4} className='g-4'>
+    <Row xs={1} sm={2} md={3} lg={4} className='g-4' style={{paddingBottom: '100px'}}>
       {cardData.map((card, idx) => (
         <Col key={idx}>
           <Card className='cards'>
@@ -20,6 +21,7 @@ const Cards = ({ cardData }) => {
           </Card>
         </Col>
       ))}
+      
     </Row>
   );
 };

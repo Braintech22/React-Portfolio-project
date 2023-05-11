@@ -39,6 +39,8 @@ const CardGrid = () => {
       {/* Other components and content */}
     </div>
   );
+
+  
 };
 
 export default CardGrid;
